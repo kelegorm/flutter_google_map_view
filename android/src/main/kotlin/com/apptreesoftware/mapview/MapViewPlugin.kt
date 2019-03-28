@@ -215,7 +215,7 @@ class MapViewPlugin(val activity: Activity) : MethodCallHandler {
                 mapTitle = mapOptions?.get("title") as String
 
                 if (mapOptions?.get("mapViewType") != null) {
-                    val mappedMapType: Int? = mapTypeMapping.get(mapOptions?.get("mapViewType"));
+                    val mappedMapType: Int? = mapTypeMapping.get(mapOptions["mapViewType"]);
                     if (mappedMapType != null) mapViewType = mappedMapType;
                 }
 
